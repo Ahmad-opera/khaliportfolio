@@ -1,0 +1,34 @@
+* {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+body {
+  background: #f9f9f9;
+  font-family: 'Montserrat';
+  color: #707070;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 767px) {
+  .is--collapsed {
+    top: -100%;
+    visibility: hidden;
+    opacity: .3;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  .is--appended {
+    top: 0%;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    background: rgba(255, 255, 255, 0.925);
+  }
+}
